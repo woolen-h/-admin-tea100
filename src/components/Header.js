@@ -1,4 +1,4 @@
-import '../App.css';
+import './Header.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Profile from './Profile';
 
@@ -15,41 +15,34 @@ function Header() {
   const handleShow = () => setShow(true);
 
   return (
-    <Navbar className="bg-body-tertiary">
+    <Navbar>
       <Container>
-        <Navbar.Brand href="#home">
-          <Button variant="link" onClick={handleShow}>
-            <IoIosMenu />
-          </Button>
-          <Offcanvas show={show} onHide={handleClose}>
-              <Offcanvas.Header closeButton>
-                <Offcanvas.Title>Menu</Offcanvas.Title>
-              </Offcanvas.Header>
-              <Offcanvas.Body>
-                <ul>
-                  <li><a href="./index.html">홈</a></li>
-                  <li><a href="./admin_product_write.html">상품 데이터 등록</a></li>
-                  <li><a href="./admin_product_manage.html">상품 데이터 관리</a></li>
-                  <li><a href="./admin_user_manage.html">회원 계정 관리</a></li>
-                  <li><a href="./admin_board_write.html">게시판 커뮤니티 등록</a></li>
-                  <li><a href="./admin_board_manage.html">게시판 커뮤니티 관리</a></li>
-              </ul>
-              </Offcanvas.Body>
-            </Offcanvas>
+        <Navbar.Brand href="#home" onClick={handleShow}>
+          <IoIosMenu />
         </Navbar.Brand>
-        <Navbar.Toggle />
+        <Offcanvas show={show} onHide={handleClose}>
+          <Offcanvas.Header closeButton>
+            <Offcanvas.Title>Menu</Offcanvas.Title>
+          </Offcanvas.Header>
+          <Offcanvas.Body>
+            <ul>
+              <li><a href="./index.html">홈</a></li>
+              <li><a href="./admin_product_write.html">상품 데이터 등록</a></li>
+              <li><a href="./admin_product_manage.html">상품 데이터 관리</a></li>
+              <li><a href="./admin_user_manage.html">회원 계정 관리</a></li>
+              <li><a href="./admin_board_write.html">게시판 커뮤니티 등록</a></li>
+              <li><a href="./admin_board_manage.html">게시판 커뮤니티 관리</a></li>
+            </ul>
+          </Offcanvas.Body>
+        </Offcanvas>
         <Navbar.Collapse className="justify-content-end">
           <Navbar.Text>
             <Nav className="me-auto">
               <Nav.Link href="#mail">
-                <Button variant="link">
-                  <FaRegEnvelope />
-                </Button>
+                <FaRegEnvelope />
               </Nav.Link>
               <Nav.Link href="#notification">
-                <Button variant="link">
-                  <FaBell />
-                </Button>
+                <FaBell />
               </Nav.Link>
               <Nav.Link href="#profile">
                 <Profile />

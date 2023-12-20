@@ -1,0 +1,19 @@
+@import './variables/color.scss';
+
+.profile_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: $black;
+    overflow: hidden;
+}
+.profile_img {
+    color: $white;
+}
+.profile_text {
+    margin-left: 10px;
+    font-size: 11px;
+}

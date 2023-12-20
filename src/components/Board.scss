@@ -1,0 +1,7 @@
+@import './variables/color.scss';
+
+.board_bg {
+    padding: 25px;
+    background-color: $black;
+    color: $white;
+}

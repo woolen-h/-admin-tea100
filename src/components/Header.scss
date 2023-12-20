@@ -1,0 +1,26 @@
+@import './variables/color.scss';
+
+nav {
+    &.navbar {
+        max-height: 70px;
+        background-color: $white;
+
+        .navbar-nav {
+            align-items: center;
+        }
+        .navbar-brand {
+            color: $black !important;
+    
+            svg {
+                margin: 10px 0;
+            }
+        }
+        .nav-link {
+            color: $black !important;
+    
+            svg {
+                margin: 10px 0;
+            }
+        }
+    }
+}
