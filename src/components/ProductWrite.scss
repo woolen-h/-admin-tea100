@@ -1,0 +1,12 @@
+@import './variables/color.scss';
+
+.product_write_container {
+    background-color: $white;
+
+    th {
+        background-color: $black-10;
+        color: $black;
+        width: 12%;
+        padding: 0 15px;
+    }
+}

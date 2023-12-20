@@ -3,7 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Profile from './Profile';
 
 import { useState } from 'react';
-import { Button, Nav, Container, Navbar, Offcanvas } from 'react-bootstrap';
+import { Nav, Container, Navbar, Offcanvas } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 import { IoIosMenu } from 'react-icons/io';
 import { FaBell, FaRegEnvelope } from 'react-icons/fa';
@@ -17,7 +18,7 @@ function Header() {
   return (
     <Navbar>
       <Container>
-        <Navbar.Brand href="#home" onClick={handleShow}>
+        <Navbar.Brand onClick={handleShow}>
           <IoIosMenu />
         </Navbar.Brand>
         <Offcanvas show={show} onHide={handleClose}>
@@ -26,8 +27,8 @@ function Header() {
           </Offcanvas.Header>
           <Offcanvas.Body>
             <ul>
-              <li><a href="./index.html">홈</a></li>
-              <li><a href="./admin_product_write.html">상품 데이터 등록</a></li>
+              <li><Link to='/'>홈</Link></li>
+              <li><Link to='/admin/write'>상품 데이터 등록</Link></li>
               <li><a href="./admin_product_manage.html">상품 데이터 관리</a></li>
               <li><a href="./admin_user_manage.html">회원 계정 관리</a></li>
               <li><a href="./admin_board_write.html">게시판 커뮤니티 등록</a></li>
@@ -38,7 +39,7 @@ function Header() {
         <Navbar.Collapse className="justify-content-end">
           <Navbar.Text>
             <Nav className="me-auto">
-              <Nav.Link href="#mail">
+              <Nav.Link href="">
                 <FaRegEnvelope />
               </Nav.Link>
               <Nav.Link href="#notification">

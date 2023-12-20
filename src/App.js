@@ -1,17 +1,18 @@
 import './App.scss';
-import { Stack } from 'react-bootstrap';
+import { Route, Routes } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from './components/Header';
-import Title from './components/Title';
-import Board from './components/Board';
+import Home from './Home';
+import Write from './Write';
+
 
 function App() {
   return (
-    <Stack gap={3}>
-      <Header />
-      <Title />
-      <Board />
-    </Stack>
+    <>
+      <Routes>
+        <Route path='/' Component={Home}></Route>
+        <Route path='/admin/write' Component={Write}></Route>
+      </Routes>
+    </>
   );
 }
 

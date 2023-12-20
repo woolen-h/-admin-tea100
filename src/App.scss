@@ -58,6 +58,16 @@ body {
 	font-weight: 600;
 }
 
+.dot {
+	&::after {
+		content: '*';
+		position: relative;
+		top: -6px;
+		left: 2px;
+		color: $theme-color-05;
+	}
+}
+
 .discription {
 	font-size: 12px;
 	font-weight: 200;
