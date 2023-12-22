@@ -9,11 +9,18 @@
     border-radius: 50%;
     background-color: $black;
     overflow: hidden;
-}
-.profile_img {
-    color: $white;
+
+    &:hover {
+        background-color: $theme-color-01;
+        transition: all .3s ease-in;
+    }
+
+    .profile_img {
+        color: $white;
+    }
 }
 .profile_text {
     margin-left: 10px;
     font-size: 11px;
+    color: $black !important;
 }

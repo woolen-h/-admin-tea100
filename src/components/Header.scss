@@ -9,14 +9,26 @@ nav {
             align-items: center;
         }
         .navbar-brand {
-            color: $black !important;
-    
-            svg {
-                margin: 10px 0;
+            color: $black-05 !important;
+            cursor: pointer;
+            height: 20px;
+            padding: 0;
+            line-height: 0;
+
+            &:hover {
+                svg {
+                    color: $black;
+                    transition: all .3s ease-in;
+                }
             }
         }
         .nav-link {
-            color: $black !important;
+            color: $black-05 !important;
+
+            &:hover {
+                color: $black !important;
+                transition: all .3s ease-in;
+            }
     
             svg {
                 margin: 10px 0;

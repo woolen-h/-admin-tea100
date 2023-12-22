@@ -1,18 +1,17 @@
 import React from 'react';
-import { Stack } from 'react-bootstrap';
-import Header from './components/Header';
-import Title from './components/Title';
 import ProductWrite from './components/ProductWrite';
+import Layout from './components/Layout';
+import Title from './components/Title';
+import { Container } from 'react-bootstrap';
 
 function Write(props) {
     return (
-        <>
-            <Stack gap={3}>
-                <Header />
-                <Title />
+        <Layout>
+            <Title />
+            <Container className='container_board'>
                 <ProductWrite />
-            </Stack>
-        </>
+            </Container>
+        </Layout>
     );
 }
 

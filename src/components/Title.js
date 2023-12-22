@@ -8,8 +8,8 @@ function Title(props) {
         <Container className='title_container'>
             <Row>
                 <Col sm={3}>
-                    <h1>Dashboard</h1>
-                    <p>홈 보드입니다.</p>
+                    <h1>Page Name</h1>
+                    <p>Page Name 게시판입니다.</p>
                 </Col>
                 <Col sm={9} className="title_button_group">
                     <Row>

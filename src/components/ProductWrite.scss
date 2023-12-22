@@ -1,12 +1,48 @@
 @import './variables/color.scss';
 
 .product_write_container {
-    background-color: $white;
-
     th {
         background-color: $black-10;
         color: $black;
         width: 12%;
         padding: 0 15px;
     }
+
+    .Product_Tag {
+        line-height: 2.75;
+        .row {
+            .col {
+                border-right: 1px dotted $black-10;
+
+                &:last-child {
+                    border: 0;
+                }
+            }
+        }
+    }
+
+    .form-label {
+        font-size: 14px;
+        font-weight: 600;
+        color: $black-07;
+
+        &.discription {
+            font-weight: 300;
+            font-size: 12px;
+            width: 100%;
+            text-align: right;
+            margin: 0;   
+        }
+    }
+
+    select {
+        &:invalid {
+            color: $black-09;
+        }
+        
+        option[value=""][disabled] {
+            display: none;
+        }
+    }
+    
 }
