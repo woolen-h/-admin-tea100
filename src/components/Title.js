@@ -21,7 +21,11 @@ function Title(props) {
                             </Button>
                         </Col>
                         <Col className='d-grid'>
-                            <Button variant="outline-dark">상품 데이터 관리</Button>
+                            <Button variant="outline-dark">
+                                <Link to='/admin/admin_board'>
+                                    상품 데이터 관리
+                                </Link>
+                            </Button>
                         </Col>
                         <Col className='d-grid'>
                             <Button variant="outline-dark">커뮤니티 게시판 등록</Button>

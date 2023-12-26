@@ -46,3 +46,11 @@
     }
     
 }
+
+.product_board_container {
+    thead tr th {
+        background-color: $black-10;
+        border: 1px solid $black-09;
+        border-bottom: 0;
+    } 
+}
